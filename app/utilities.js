@@ -5,6 +5,12 @@ function getById(id) {
     const result = document.getElementById(id).innerText;
     return result;
 }
+
+// Get Element BY ID
+function getByIdValue(id) {
+    const result = document.getElementById(id).value;
+    return result;
+}
 // Get Element
 
 function getElById(id) {
@@ -81,3 +87,4 @@ function removeElemet(element){
     const subBtnhtml = document.getElementById(element);
         subBtnhtml.classList.remove('hidden')
 }
+

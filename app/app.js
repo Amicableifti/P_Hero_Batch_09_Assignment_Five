@@ -2,6 +2,10 @@
 // Get Class
 const allSeat = getByClassName("select-seat");
 
+function check(){
+    my_modal_1.showModal()
+}
+
 // For Loop
 let totalseat = 8;
 let count = 0;
@@ -40,7 +44,7 @@ for (const seat of allSeat) {
         p3.innerText = ticketPrice;
 
         //Validation check
-        console.log(count);
+
         if (count > 4) {
             alert("You can buy only four");
         }
@@ -64,6 +68,7 @@ for (const seat of allSeat) {
             // Set Total Price
             setInnerText("grand-total", grandTotal);
             return 0;
+
         }
 
 
@@ -71,4 +76,3 @@ for (const seat of allSeat) {
 
 
 }
-
