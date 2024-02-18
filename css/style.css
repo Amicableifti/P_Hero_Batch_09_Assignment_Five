@@ -6,3 +6,12 @@
 .bg-p-c{
   background-color: #1DD100 !important;
 }
+
+.textLeft span{
+  text-align: left;
+
+}
+
+.non-selectable {
+  user-select: none;
+}

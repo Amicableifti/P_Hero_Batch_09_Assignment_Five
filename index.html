@@ -20,8 +20,6 @@
     <!-- DaisuUI -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
 
-
-
 </head>
 
 <body class="bg-white">
@@ -31,8 +29,8 @@
             <div class="navbar max-w-6xl mx-auto ">
                 <div class="navbar-start">
                     <div class="dropdown">
-                    </div> 
-                    <a class=" text-black text-2xl font-extrabold mt-4" > I-Ticket</a>
+                    </div>
+                    <a class=" text-black text-2xl font-extrabold mt-4"> I-Ticket</a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal px-1">
@@ -50,7 +48,7 @@
         </nav>
     </header>
     <!-- Main Section -->
-    <main class="  bg-white text-black mt-6 pl-2 pr-2 ">
+    <main class="  bg-white text-black mt-6 lg:p-0 pl-2 pr-2 ">
         <!-- Banner -->
         <div class="banner lg:max-w-6xl m-auto mx-auto ">
             <div class=" rounded-xl hero h-auto " style="background-image: url(./images/banner.png); ">
@@ -62,7 +60,8 @@
                         </h1>
                         <p class="mb-5 text-white font-normal">Yes, you can run unit tests and view the results directly
                             within the app. The integrated testing features allow for a streamlined .</p>
-                        <button class="btn btn-primary mb-20 bg-p-c border-none" ><a href="#calculation"> Buy Tickets</a></button>
+                        <button class="btn btn-primary mb-20 bg-p-c border-none"><a href="#calculation"> Buy
+                                Tickets</a></button>
                     </div>
                 </div>
             </div>
@@ -86,8 +85,216 @@
             </div>
         </div>
         <!-- Calculation Section -->
-        <div class="calculation" id="calculation"></div>
+        <div class="calculation bg-[#F7F8F8] pt-8 lg:pt-20 pb-20 border-green-500 border-t-2 rounded-3xl w-full"
+            id="calculation">
+            <div class="max-w-6xl m-auto mx-auto">
+                <!-- Heading Part Start -->
+                <h1 class="text-center text-black  text-4xl  font-bold mb-4 lg:mb-8">P.H Paribahan</h1>
+                <p class="text-center">Yes, you can run unit tests and view the results directly within the app. The
+                    integrated <br> testing
+                    features allow for a streamlined .</p>
+                <!-- location and Ticet Price -->
+                <div class="grid grid-cols-6 lg:h-5/6 content-center gap-6 bg-white pt-10 pb-10 rounded-2xl mt-10 p-6">
+                    <!-- Left Location Part -->
+                    <div class="time col-span-5 pr-10">
+                        <div class="top flex justify-between">
+                            <div class="flex gap-4">
+                                <img class="w-14 h-10 mt-2" src="./images/bus-logo.png" alt="">
+                                <div class="">
+                                    <h1 class=" text-black  text-2xl  font-bold mt-1 lg:mt-0 mb-1 lg:mb-1">GreenLine
+                                        Paribahan</h1>
+                                    <p class="text-2 ">Coach-009-WEB ! AC_Business</p>
+                                </div>
+                            </div>
+                            <div>
+                                <a class="btn bg-[#E8FAE5] border-lime-400 border-1 border-none  text-[#1DD100]">
+                                    <img class="w-6" src="images/seat-green.png" alt=""> <span
+                                        id="seat-number-show">8</span>Seats left
+                                </a>
+                            </div>
+                        </div>
+                        <div class="bottom bg-[#F7F8F8] p-2 pl-4 pr-4 rounded-xl mt-4 ">
+                            <div class="overflow-x-auto">
+                                <!-- Table Start -->
+                                <table class="table rounded-xl">
+                                    <tbody>
+                                        <!-- row 1 -->
+                                        <tr class="border-dashed border-gray-300">
+
+                                            <td>Cy Ganderton</td>
+                                            <td></td>
+                                            <td class=" font-medium text-right">Dhaka - Sylhet</td>
+                                        </tr>
+                                        <!-- row 2 -->
+                                        <tr class="border-dashed border-gray-300">
+
+                                            <td>Hart Hagerty</td>
+                                            <td></td>
+                                            <td class=" font-medium text-right">9:00 PM</td>
+                                        </tr>
+                                        <!-- row 3 -->
+                                        <tr class="border-dashed">
+
+                                            <td><button
+                                                    class="pl-6 pr-6 rounded-lg pt-2 pb-2 bg-gray-200 text-black border-none">Boarding
+                                                    Point - Laxmipur</button></td>
+                                            <td><button
+                                                    class="pl-6 pr-6 rounded-lg pt-2 pb-2 bg-gray-200 text-black border-none">Dropping
+                                                    Point - Bogura</button></td>
+                                            <td><button
+                                                    class="pl-6 pr-6 rounded-lg pt-2 pb-2 bg-gray-200 text-black border-none">Est.
+                                                    Time - 11 Hour</button></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="taka col-span-1 align-middle flex flex-col justify-center">
+                        <div class="flex justify-center">
+                            <img class="" src="./images/fare.png" alt="">
+                        </div>
+                        <h1 class="text-center text-black  text-2xl  font-bold mt-4 lg:mt-2 mb-4 lg:mb-2">
+                            <span id="ticket-price"> 550 </span>Taka
+                        </h1>
+                        <h4 class="text-center text-gray-500  text-4  font-bold mb-4 lg:mb-8">Per seat</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="seatpart max-w-6xl m-auto mx-auto">
+                <div class="grid grid-cols-5 content-center gap-6 bg-white pt-10 pb-10 rounded-2xl mt-10 p-6">
+                    <!-- Seat Left Part -->
+                    <div class="seatleft col-span-3 ">
+                        <!-- Top Seat -->
+                        <div>
+                            <h1 class="font-medium mb-3 border-grey-500 border-b-2 border-dashed pb-3">Select Your Seat
+                            </h1>
+                            <!-- Available + Selected Seat -->
+                            <div
+                                class="flex justify-between  pb-2 items-center border-grey-500 border-b-2 border-dashed">
+                                <!-- Left -->
+                                <div class="flex justify-start items-center">
+                                    <img src="./images/seat-gray.png" alt="">
+                                    <p class="ml-2">Available</p>
+                                </div>
+                                <!-- Right -->
+                                <div class="flex justify-start items-center">
+                                    <img src="./images/seat-green-filled.png" alt="">
+                                    <p class="ml-2 text-green-600 ">Selected</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- All Seat -->
+                        <div class="pt-3">
+                            <div>
+                                <div class="flex justify-end"><kbd
+                                        class="kbd bg-gray-200  border-none pt-1 pb-1 pl-4 pr-4"><img class="w-6 h-6"
+                                            src="./images/icon-wheel.png" alt=""></kbd></div>
+                                <!-- SEAT NUMBER 1ST ROW -->
+                                <div class="grid grid-cols-10 gap-4 content-center pt-4 ">
+                                    <h1 class="col-start-1 col-end-2 mt-1">A</h1>
+                                    <kbd class="col-start-2 col-end-4 kbd cursor-pointer select-seat bg-white ">A1</kbd>
+                                    <kbd class="col-start-4 col-end-6 kbd bg-white cursor-pointer select-seat">A2</kbd>
+                                    <kbd class="col-start-7 col-end-9 kbd bg-white cursor-pointer select-seat">A3</kbd>
+                                    <kbd class="col-start-9 col-span-2 kbd bg-white cursor-pointer select-seat">A4</kbd>
+                                </div>
+                                <!-- SEAT NUMBER 2ED ROW -->
+                                <div class="grid grid-cols-10 gap-4 content-center pt-4">
+                                    <h1 class="col-start-1 col-end-2 mt-1">B</h1>
+                                    <kbd class="col-start-2 col-end-4 kbd bg-white cursor-pointer select-seat">B1</kbd>
+                                    <kbd class="col-start-4 col-end-6 kbd bg-white cursor-pointer select-seat">B2</kbd>
+                                    <kbd class="col-start-7 col-end-9 kbd bg-white cursor-pointer select-seat">B3</kbd>
+                                    <kbd class="col-start-9 col-span-2 kbd bg-white cursor-pointer select-seat">B4</kbd>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Seat Right part -->
+                    <div class="seatright col-span-2 pl-5 border-gray-400 border-l-2 border-dashed">
+                        <div>
+                            <h1 class="font-medium mb-3 border-grey-500 border-b-2 border-dashed pb-3">Select Your Seat
+                            </h1>
+                            <div>
+                                <!-- Seat Calculation -->
+                                <div class="bg-gray-100 p-4 rounded-lg">
+                                    <div class="grid grid-cols-3 border-dashed border-gray-300 border-b-2 pb-2">
+                                        <!-- Seat Nmber -->
+                                        <p class="col-span-1 text-left ">seat
+                                            <span class="bg-green-500  text-white pl-2 pr-2 rounded-lg text-sm "
+                                                id="seat-add">0</span>
+                                        </p>
+                                        <p class="col-span-1 text-center">Class</p>
+                                        <p class="col-span-1 text-right">Price</p>
+
+                                    </div>
+
+                                    <!--  Dyamic Data -->
+
+                                    <div class="grid grid-cols-3 border-none border-gray-300 border-b-2 pt-2 pb-2 text-right textLeft" id="seat-list">
+                                    
+                                    </div>
+                                
+                                    <!-- End Data -->
+                                    <hr>
+                                    <div class=" flex justify-between pt-2 pb-1">
+                                        <p class="col-span-1 text-center font-medium">Total Price</p>
+                                        <p class="col-span-1 text-center">BDT <span id="total-price">00</span></p>
+                                    </div>
+                                    <!-- Coupon Field -->
+                                    <div class="mt-2 mb-2">
+                                        <label class="input input-bordered bg-white flex items-center gap-2">
+                                            <input type="text" class="grow" placeholder="Have any copuon ?" />
+                                            <button
+                                                class=" pr-4 pl-4 rounded-lg pt-2 pb-2 bg-green-500 text-white border-none">
+                                                Apply</button>
+                                        </label>
+                                    </div>
+                                    <!-- Grand Total -->
+                                    <div class=" flex justify-between pt-2 pb-1">
+                                        <p class="col-span-1 text-center font-medium">Grand Total</p>
+                                        <p class="col-span-1 text-center">BDT <span id="grand-total">00</span></p>
+                                    </div>
+                                    <!--Customer Field  Info -->
+                                    <div>
+                                        <form action="/success.html">
+                                            <label class="form-control w-full max-w-lg">
+                                                <div class="label">
+                                                    <span class="label-text text-black">Passenger Name*</span>
+                                                </div>
+                                                <input required type="text" placeholder="Enter Your Name"
+                                                    class="input input-bordered w-full max-w-lg bg-white" />
+                                            </label>
+                                            <label class="form-control w-full max-w-lg">
+                                                <div class="label">
+                                                    <span class="label-text text-black">Phone Number*</span>
+                                                </div>
+                                                <input required type="text" placeholder="Enter Your Name"
+                                                    class="input input-bordered w-full max-w-lg  bg-white" />
+                                            </label>
+                                            <label class="form-control w-full max-w-lg">
+                                                <div class="label">
+                                                    <span class="label-text text-black">Email ID</span>
+                                                </div>
+                                                <input required type="text" placeholder="Enter Your Name"
+                                                    class=" input input-bordered w-full bg-white" />
+                                            </label>
+                                            <Button class="btn w-full max-w-lg border-none bg-green-500 text-white mt-3"
+                                                type="submit"> Next</Button>
+                                        </form>
+                                    </div>
+                                    <div class="flex justify-between pt-4 pb-1 text-xs pr-4 pl-4 ">
+                                        <a class="underline underline-offset-1" href="#">Terms and Conditions</a>
+                                        <a class="underline underline-offset-1" href="#">Cancellation Policy</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
+
     <footer class="footer p-10 bg-black flex justify-between pl-20 pr-20 ">
         <aside>
             <a class=" text-white text-2xl font-extrabold mt-4"> I-Ticket</a>
@@ -119,6 +326,9 @@
     </footer>
     <!-- DaisuUI -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Javscript OUR -->
+    <script src="./app/utilities.js"></script>
+    <script src="./app/app.js"></script>
 
 </body>
 
